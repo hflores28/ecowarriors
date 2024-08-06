@@ -1,0 +1,21 @@
+{ //scripts\tasks.json
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "ecowarriors",
+        "type": "shell",
+        "command": "C:/Program Files/Unity/Hub/Editor/2020.1.0f1/Editor/Unity.exe", //Ruta de instalacion Unity por Default
+        "args": [
+          "-batchmode",
+          "-quit",
+          "-projectPath",
+          "${workspaceFolder}",
+          "-executeMethod",
+          "BuildScript.PerformBuild"
+        ],
+        "group": "build",
+        "problemMatcher": []
+      }
+    ]
+  }
+  
