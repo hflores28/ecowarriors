@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWarriors</title>
+</head>
+<body>
+<div style="color: green;">
+    <h1>Como usar Git:</h1>
+    <ol>
+        <li>Copiar el proyecto a nuestro entorno local:</li>
+        <p style="font-weight: bold;">
+            git clone (url)
+        </p>
+        <li>Traer lo que esta en el repositorio</li>
+        <p style="font-weight: bold;">
+            git pull
+        </p>
+        <li>Ver estado del proyecto</li>
+        <p style="font-weight: bold;">
+            git status
+        </p>
+        <li>Guardar cambios en archivos</li>
+        <p style="font-weight: bold;">
+            git add . //Agrega todos los archivos
+            git add (nombre_archivo)
+        </p>
+        <li>Subir cambios "mensaje"</li>
+        <p style="font-weight: bold;">
+            git commit -m "mensaje_commit"
+        </p>
+        <li>Subir cambios "Repositorio"</li>
+        <p style="font-weight: bold;">
+            git push origin master
+        </p>
+    </ol>
+</div>
+
+    <h1>Crear proyecto en Unity</h1>
+    <ol>
+        <li>Abre Unity Hub</li>
+        <li>Crear un nuevo proyecto con plantilla 2D o 3D</li>
+        <li>Nombrar el proyecto "EcoWarriors"</li>
+    </ol>
+    
+    <h1>Configurar el proyecto</h1>
+    <ol>
+        <li>Crear un nuevo proyecto con plantilla 2D o 3D</li>
+        <li>Nombrar el proyecto "EcoWarriors"</li>
+        <li>En 'Edit > Project Settings' ajustamos la Resolución y ajustes de graficos</li>
+    </ol>
+    
+    <h1>Organización de carpetas</h1>
+    <ol>
+        Assets/<br>
+        ├── Art/<br>
+        ├── Audio/<br>
+        ├── Prefabs/<br>
+        ├── Scenes/<br>
+        ├── Scripts/<br>
+        ├── UI/
+    </ol>
+    
+    <h1>Importar recursos</h1>
+    <ol>
+        <li>Importar graficos usando Aseprite y Photoshop 'Assets/Art'</li>
+        <li>Importar audio usando Logic Pro y Pro Tools 'Assets/Audio'</li>
+    </ol>
+
+    <h1>Crear las escenas</h1>
+    <ol>
+        <li>En 'File > New Scene' Guardar en 'Assets/Scenes'</li>
+        <li>Configurar la escena elementos y objetos para el primer nivel</li>
+    </ol>
+
+    <h1>Desarrollo de Scripts de Movimiento</h1>
+    <ol>
+        <li>Para gestionar movimientos creamos un Script en 'Assets/Scripts'</li>
+        <li>Se crearan scrips adicionales para cada habilidad de los personajes "Luna, Kai, Aria, Orion"</li>
+    </ol>
+
+    <h1>Diseño de Niveles</h1>
+    <ol>
+        <li>Nivel 1: Limpieza de Playas</li>
+        Añadir Escena, Objetos y NPCs que eduquen sobre el reciclaje
+        <li>Niveles adicionales (level 2, level 3)</li>
+        Por cada nivel del juego Diseñar cada nivel de acuerdo a los temas (reforestación, energías renovables)
+    </ol>
+    
+    <h1>Configuración de Controladores</h1>
+    <ol>
+        <li>Asignación de teclas de movimiento y habilidades</li>
+        <li>Configuración de controles PC-Movil</li>
+    </ol>
+    
+    <h1>Integración y pruebas</h1>
+    <ol>
+        <li>Asignación de teclas de movimiento y habilidades</li>
+        <li>Configuración de controles PC-Movil</li>
+    </ol>
+
+    <h2>
+        Configuración Inicial
+    </h2>
+        MainMenu:
+        Crear un Canvas con botones para "Start Game" y "Quit Game".
+        Añadir el script MainMenuUI al Canvas y asignar las funciones a los botones.
+        <br>
+    HUD:
+    Crear un Canvas con elementos de texto para mostrar la XP y Eco Coins.
+        <br>
+    Añadir el script HUD al Canvas y asignar los elementos de texto a las variables públicas del script.
+        <br>
+    Player:
+    Crear un prefab del jugador con el componente PlayerController.
+        <br>
+    NPCs e Ítems:
+    Crear prefabs para NPCs e ítems con los respectivos scripts NPC e Item.
+        <br>
+    Level Manager:
+    Añadir el script LevelManager a un objeto vacío en cada nivel para gestionar la carga y recarga de niveles.
+        <br>
+        Game Manager:
+        Añadir el script GameManager a un objeto vacío en la escena principal y asegurarse de que persista entre escenas utilizando DontDestroyOnLoad.
+        <br>
+        <h1>
+        Recursos
+        </h1>
+        <ol>
+            <li>
+        Art: Coloca todos los recursos gráficos (sprites, tilesets) en la carpeta Art/.
+            </li>
+            <li>
+        Audio: Coloca todos los archivos de audio (música, efectos de sonido) en la carpeta Audio/.
+            </li>
+            <li>
+        Prefabs: Guarda todos los prefabs creados (jugadores, NPCs, ítems) en la carpeta Prefabs/.
+            </li>
+            <li>
+        UI: Guarda todos los elementos y scripts relacionados con la UI en la carpeta UI/.
+            </li>
+        </ol>
+</body>
+</html>

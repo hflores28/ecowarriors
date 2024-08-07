@@ -1,0 +1,1 @@
+Crea cada una de las escenas del juego con los elementos necesarios: personajes, NPCs, ítems, etc. Añade un objeto que tenga el script LevelManager para gestionar la carga de niveles.
